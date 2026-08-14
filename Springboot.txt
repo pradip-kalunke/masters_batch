@@ -1,0 +1,50 @@
+Springboot :
+
+** IOC - container 
+	A] Bean - replaceplance[new A()], creation, usages.. 
+	B] dependency-inj -- @Autowired.   
+	
+**annotations
+>@Autowired, @Component, @RestController, @Service, @Repo, 
+	@Comp..Scan,  @Primary, @Qualifier , @SBAppn
+
+postman -- Restful-API Testing tool.. GET,POST,
+
+-------- projects 
+-- IPL -- Player Entity 
+
+Today's Task  -----
+
+------ 
+
+@Service
+class PlayerService   {
+	@Autowired
+	IplDao  iplDao ;	
+
+	getPlayerById(){...}
+	getAllPlayers(){...}
+	addPlayer(){...}
+
+}
+
+@Repo
+class IplDao {
+	@Autowired
+	SessionFactory sf; 
+
+	Player getPlayerById(int pid){
+		Session ssn =sf.openSession();
+		Player playerById =ssn.get(Player.class, pid);
+		return playerById;
+	}
+
+	getAllPlayers(){...}
+	addPlayer(){...}
+
+}
+
+   
+
+
+
