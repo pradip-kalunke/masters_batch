@@ -1,0 +1,13 @@
+Last Session :
+> .class file [bytecode]   .. what is a bytecode.
+> compiler - javac, JIT
+> interpreter
+> java features .. PI , performance, Portable
+> JDK , JRE, JVM 
+> Why to store a Data.   storage, uni_name, type
+> data types ... primitives ...
+	-- byte, short, int , long .
+
+*** Today's Agenda  : 
+	> Datatypes 
+	> Operators.
